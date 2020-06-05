@@ -23,7 +23,9 @@ from __future__ import print_function
 # pylint: disable=g-import-not-at-top
 
 try:
+  # pylint: disable=g-direct-tensorflow-import
   from tensorflow.python.ops.numpy_ops import *
+  from tensorflow import newaxis
 except Exception:  # pylint: disable=broad-except
   from tensorflow import newaxis
 
